@@ -14,7 +14,7 @@ The project implements:
 - Data stream classification with adaptive density peak clustering
 - Concept drift detection
 - Semi-supervised learning with incremental model updates
-- Fast clustering-based change point detection
+- Change point detection (automatically determine the number of clusters)
 
 The goal is to address **label scarcity** and **non-stationary environments** in real-time data streams.
 
@@ -25,9 +25,9 @@ The goal is to address **label scarcity** and **non-stationary environments** in
 ```
 │── Electricity.csv                 # Example data stream
 │── solution.py                     # Main program entry point
-│── concept_drift_detect.py         # Concept drift detection logic
-│── change_point.py                 # Change-point detection module
-│── rho_multi_delta.py              # Adaptive density & clustering
+│── concept_drift_detect.py         # Concept drift detection method
+│── change_point.py                 # Change point detection module
+│── rho_multi_delta.py              # Adaptive density peak clustering
 │── README.md                       # Project documentation
 ```
 
